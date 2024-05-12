@@ -1,0 +1,186 @@
+/* For smaller then 650px width */
+body {
+  background-color: #ffa07a;
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  background-color: #008080;
+  height: 109px;
+  margin-bottom: 39px;
+}
+.navButtons > a {
+  color: #ffa07a;
+  text-decoration: underline #551a8b;
+  font-size: 16px;
+  font-weight: 400px;
+}
+.navButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 125px;
+}
+
+.bannerTitle {
+  background-color: #7f503d;
+  height: 84px;
+}
+.bannerTitle > h1 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 26px;
+
+  font-weight: 700;
+  color: #ff7f50;
+}
+.intro {
+  padding-top: 130px;
+  padding-left: 14px;
+}
+.intro > h2 {
+  font-size: 24px;
+  color: #ffff00;
+  font-weight: 700;
+}
+.intro > .line3,
+.line2 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.firstBannerOfPhotos {
+  padding-top: 60px;
+}
+.firstBannerOfPhotos > img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.middleBannerNote {
+  background-color: #008080;
+  height: 275px;
+  margin-top: 50px;
+}
+.middleBannerNote > h2 {
+  font-size: 32.5px;
+  color: #ffff00;
+  font-weight: 700;
+  padding: 30px 9px 1px 10px;
+}
+.middleBannerNote > p {
+  font-size: 16px;
+  color: #ffff00;
+  font-weight: 400;
+}
+.bottomPhotoBanner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.bottomPhotoBanner > img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: -90px;
+}
+.bottom > img {
+  width: 50vw;
+  height: 100%;
+}
+.bottom > h2,
+h3 {
+  font-weight: 700;
+  color: #ffff00;
+  font-size: 32px;
+}
+footer {
+  background-color: #008080;
+  height: 109px;
+}
+.footerButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 21px;
+}
+.footerButtons > a {
+  color: #ffa07a;
+  text-decoration: underline #551a8b;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+/* Media query for full screen */
+@media screen and (min-width: 600px) {
+  .navButtons {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 45px;
+    padding-top: 20px;
+    gap: 90px;
+  }
+  .navButtons > a {
+    text-decoration: none;
+  }
+  nav {
+    background-color: #008080;
+    height: 45px;
+    margin-bottom: 143px;
+  }
+  .intro {
+    padding-top: 210px;
+  }
+  .firstBannerOfPhotos > img {
+    max-width: 550px;
+    min-width: 50px;
+  }
+  .firstBannerOfPhotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .bottomPhotoBanner > img {
+    max-width: 550px;
+    min-width: 50px;
+  }
+  .bottomPhotoBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .footerButtons {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 45px;
+    padding-top: 20px;
+    gap: 90px;
+  }
+  .footerButtons > a {
+    text-decoration: none;
+  }
+  footer {
+    height: 45px;
+  }
+}
